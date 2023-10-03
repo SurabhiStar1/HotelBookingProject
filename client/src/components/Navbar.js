@@ -9,20 +9,20 @@ function Navbar() {
 
     return (
         <>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/home">Hotel Rooms</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon" >
-                            <i class="fa fa-bars" style={{color:'white'}}></i>
+            <nav className="navbar navbar-expand-lg">
+                <div className="container-fluid">
+                    <a className="navbar-brand" href="/home">Hotel Rooms</a>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon" >
+                            <i className="fa fa-bars" style={{color:'white'}}></i>
                         </span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mr-5">
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav mr-5">
                             {user ? (
                                 <>
-                                    <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle" 
+                                    <div className="dropdown">
+                                        <button className="btn btn-secondary dropdown-toggle" 
                                         type="button" id="dropdownMenuButton" 
                                         data-toggle="dropdown" 
                                         aria-haspopup="true" 
@@ -30,19 +30,19 @@ function Navbar() {
                                         >
                                             {user.name}
                                         </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="/profile">Profile</a>
-                                            <a class="dropdown-item" href="#" onClick={logout}>Logout</a>
+                                        <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a className="dropdown-item" href="/profile">Profile</a>
+                                            <a className="dropdown-item" href="#" onClick={logout}>Logout</a>
                                         </div>
                                     </div>
                                 </>
                             ) : (
                                 <>
-                                    <li class="nav-item">
-                                        <a class="nav-link " href="/register">Register</a>
+                                    <li className="nav-item">
+                                        <a className="nav-link " href="/register">Register</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/login">Login</a>
+                                    <li className="nav-item">
+                                        <a className="nav-link" href="/login">Login</a>
                                     </li>
                                 </>)}
 

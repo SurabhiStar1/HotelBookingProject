@@ -95,7 +95,7 @@ export function MyBookings() {
 
                                 {booking.status !=='cancelled' && (
                                     <div className="text-right">
-                                        <button class="btn btn-primary" onClick={() => { cancelBooking(booking._id, booking.roomid) }}> CANCEL BOOKING</button>
+                                        <button className="btn btn-primary" onClick={() => { cancelBooking(booking._id, booking.roomid) }}> CANCEL BOOKING</button>
                                     </div>
                                 )}
                             </div>
